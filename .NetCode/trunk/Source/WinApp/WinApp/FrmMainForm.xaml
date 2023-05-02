@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinApp.FrmMainForm">
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+            <Button Text="扫码考勤"  Clicked="Button_Clicked"/>
+            <Button Text="切换账号"  Clicked="Button_Clicked_1"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="调用Api"  Clicked="Button_Clicked2"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="扫一扫"  Clicked="Button_Clicked_3"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

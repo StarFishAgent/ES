@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinApp.FrmRegister">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions >
+
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+
+
+            </Grid.ColumnDefinitions>
+
+
+            <Entry x:Name="txtUserNo" Text="" Placeholder="请输入您的用户名" Grid.Row="0" Grid.Column="1" WidthRequest="250" HorizontalOptions="Center" VerticalOptions="Center" />
+
+
+
+            <Entry x:Name="txtUserPwd" Text="" Placeholder="请输入您的密码" Grid.Row="1" Grid.Column="1" WidthRequest="250" IsPassword="True" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+
+            <Entry x:Name="txtRePwd" Text="" Placeholder="请确认您的密码" Grid.Row="2" Grid.Column="1" WidthRequest="250" IsPassword="True" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+
+            <Entry x:Name="txtUserName" Text="" Placeholder="请输入您的姓名" Grid.Row="3" Grid.Column="1" WidthRequest="250" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+
+            <Button x:Name="btnRegister" Text="注册" Grid.Row="4" Grid.Column="1" WidthRequest="250" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnRegister_Clicked"/>
+            <Button x:Name="btnCancel" Text="取消" Grid.Row="5" Grid.Column="1" WidthRequest="250" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnCancel_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

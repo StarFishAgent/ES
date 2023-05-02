@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84A9A9EA-FED8-4EB5-A8FB-4D21B1E17FDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WinControl</RootNamespace>
+    <AssemblyName>WinControl</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.Desktop.21.2.3\lib\net452\DevExpress.Data.Desktop.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Office.Core.21.2.3\lib\net452\DevExpress.Office.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Pdf.Core.21.2.3\lib\net452\DevExpress.Pdf.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Drawing, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Pdf.Drawing.21.2.3\lib\net452\DevExpress.Pdf.v21.2.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.PivotGrid.Core.21.2.3\lib\net452\DevExpress.PivotGrid.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Printing.Core.21.2.3\lib\net452\DevExpress.Printing.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Core.21.2.3\lib\net452\DevExpress.RichEdit.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.RichEdit.Export.21.2.3\lib\net452\DevExpress.RichEdit.v21.2.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Sparkline.Core.21.2.3\lib\net452\DevExpress.Sparkline.v21.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Grid.21.2.3\lib\net452\DevExpress.XtraGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Navigation.21.2.3\lib\net452\DevExpress.XtraLayout.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.PivotGrid.21.2.3\lib\net452\DevExpress.XtraPivotGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.Printing.21.2.3\lib\net452\DevExpress.XtraPrinting.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.TreeList.21.2.3\lib\net452\DevExpress.XtraTreeList.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Win.VerticalGrid.21.2.3\lib\net452\DevExpress.XtraVerticalGrid.v21.2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyControlAnswer\ControlAnPanelControlAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControlAnswer\ControlAnPanelControlAll.Designer.cs">
+      <DependentUpon>ControlAnPanelControlAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControlAnswer\ControlAnRichBoxSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControlAnswer\ControlAnRichBoxSingle.Designer.cs">
+      <DependentUpon>ControlAnRichBoxSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlRePanelControlAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlRePanelControlAll.Designer.cs">
+      <DependentUpon>ControlRePanelControlAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxControl.Designer.cs">
+      <DependentUpon>ControlRichBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlButton.Designer.cs">
+      <DependentUpon>ControlButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlTrueOrFalse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlTrueOrFalse.Designer.cs">
+      <DependentUpon>ControlTrueOrFalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlAnswer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlAnswer.Designer.cs">
+      <DependentUpon>ControlAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlPanelAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlPanelAll.Designer.cs">
+      <DependentUpon>ControlPanelAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxEdit.Designer.cs">
+      <DependentUpon>ControlRichBoxEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxSingle.Designer.cs">
+      <DependentUpon>ControlRichBoxSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\ControlType.cs" />
+    <Compile Include="MyControl\ControlRichBoxPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlRichBoxPro.Designer.cs">
+      <DependentUpon>ControlRichBoxPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyControlAnswer\ControlAnPanelControlAll.resx">
+      <DependentUpon>ControlAnPanelControlAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControlAnswer\ControlAnRichBoxSingle.resx">
+      <DependentUpon>ControlAnRichBoxSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlRePanelControlAll.resx">
+      <DependentUpon>ControlRePanelControlAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlRichBoxControl.resx">
+      <DependentUpon>ControlRichBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlAnswer.resx">
+      <DependentUpon>ControlAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlButton.resx">
+      <DependentUpon>ControlButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlPanelAll.resx">
+      <DependentUpon>ControlPanelAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlRichBoxEdit.resx">
+      <DependentUpon>ControlRichBoxEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlRichBoxPro.resx">
+      <DependentUpon>ControlRichBoxPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\ControlRichBoxSingle.resx">
+      <DependentUpon>ControlRichBoxSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="MyControl\ControlTrueOrFalse.resx">
+      <DependentUpon>ControlTrueOrFalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinApp\WinApp\WinApp.csproj">
+      <Project>{35CB50B1-1A11-472F-A194-E63DAEA0182B}</Project>
+      <Name>WinApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

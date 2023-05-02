@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63CB4136-CF91-4C3C-B9B5-4E48B2501231}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinClient</RootNamespace>
+    <AssemblyName>WinClient</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Enums.NET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL">
+      <HintPath>..\packages\Enums.NET.4.0.0\lib\net45\Enums.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddInfo\FrmExamAddAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddAnswer.Designer.cs">
+      <DependentUpon>FrmExamAddAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CardReader.cs" />
+    <Compile Include="AddInfo\FrmExamAddSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddSelect.Designer.cs">
+      <DependentUpon>FrmExamAddSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddTitle.Designer.cs">
+      <DependentUpon>FrmExamAddTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddExamNameInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddExamNameInfo.Designer.cs">
+      <DependentUpon>FrmExamAddExamNameInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddInfo\FrmExamAddType.Designer.cs">
+      <DependentUpon>FrmExamAddType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\FrmExamTypeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FrmExamTypeList.Designer.cs">
+      <DependentUpon>FrmExamTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\FrmExamNameList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FrmExamNameList.Designer.cs">
+      <DependentUpon>FrmExamNameList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPage\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\FrmMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FrmMainForm.Designer.cs">
+      <DependentUpon>FrmMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\FrmQRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPage\FrmQRCode.Designer.cs">
+      <DependentUpon>FrmQRCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPage\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\FrmExamQuestionsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\FrmExamQuestionsList.Designer.cs">
+      <DependentUpon>FrmExamQuestionsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\TextEditHelper.cs" />
+    <Compile Include="Helper\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\SqlHelper.cs" />
+    <EmbeddedResource Include="AddInfo\FrmExamAddAnswer.resx">
+      <DependentUpon>FrmExamAddAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInfo\FrmExamAddSelect.resx">
+      <DependentUpon>FrmExamAddSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInfo\FrmExamAddTitle.resx">
+      <DependentUpon>FrmExamAddTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInfo\FrmExamAddExamNameInfo.resx">
+      <DependentUpon>FrmExamAddExamNameInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddInfo\FrmExamAddType.resx">
+      <DependentUpon>FrmExamAddType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FrmExamTypeList.resx">
+      <DependentUpon>FrmExamTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FrmExamQuestionsList.resx">
+      <DependentUpon>FrmExamQuestionsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FrmExamNameList.resx">
+      <DependentUpon>FrmExamNameList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPage\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\FrmMainForm.resx">
+      <DependentUpon>FrmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPage\FrmQRCode.resx">
+      <DependentUpon>FrmQRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPage\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\girl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WinControl\WinControl.csproj">
+      <Project>{84A9A9EA-FED8-4EB5-A8FB-4D21B1E17FDF}</Project>
+      <Name>WinControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

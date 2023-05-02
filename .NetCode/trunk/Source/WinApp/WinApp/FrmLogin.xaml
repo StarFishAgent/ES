@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WinApp.FrmLogin">
+    <StackLayout  HorizontalOptions="Center" VerticalOptions="Center" >
+
+        <StackLayout Orientation="Horizontal" HeightRequest="50">
+
+            <Label Text="用户名：" />
+
+            <Entry x:Name="txtUserNo" Placeholder="张三" WidthRequest="200"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="50" >
+
+            <Label Text="密码  ：" />
+
+            <Entry x:Name="txtUserPwd" Placeholder="" WidthRequest="200" IsPassword="True" />
+
+        </StackLayout>
+
+        <Button Text="进入" Clicked="Button_Clicked"/>
+
+        <Button Text="注册" Clicked="Button_Clicked_1"/>
+
+    </StackLayout>
+</ContentPage>
